@@ -2,10 +2,9 @@
 
 [![NinjaTrader 8](https://img.shields.io/badge/Platform-NinjaTrader%208-black.svg)](https://ninjatrader.com)
 [![License: Personal Use](https://img.shields.io/badge/License-Personal%20Use-6E6E6E.svg)](#license)
+[![Support: Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
 [![YouTube Guide](https://img.shields.io/badge/YouTube-Watch%20Walkthrough-red.svg)](https://youtube.com/@icPriceAction)
 [![Website](https://img.shields.io/badge/Website-icpriceaction.com-111213.svg)](https://icpriceaction.com)
-[![Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
-[![Prop Discounts](https://img.shields.io/badge/Prop%20Discounts-Code%20ICPAT-black.svg)](https://icpriceaction.com/prop-firms.html)
 
 A specialized Drawing Tool engineered for Price Action day trading. Range Band marks a trading range between resistance and support, adds a 50% equilibrium line with optional 25% / 75% quarter lines, and shows the range size in points and ticks.
 
@@ -21,13 +20,31 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ---
 
+## ☕ Support the Project
+
+All tools by **icPriceAction** are **100% free and open-source for personal trading use**. There are no paywalls, subscriptions, or locked features and there never will be!
+
+Developing, optimizing for zero latency on multiple charts/instruments, and maintaining documentation and releases takes a **considerable amount of personal time and ongoing effort**. 
+
+If this tool saves you screen time, improves your execution, or cleans up your charts, buying a coffee is the best way to support continued development:
+
+<p align="left">
+  <a href="https://buymeacoffee.com/icpriceaction" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="190">
+  </a>
+</p>
+
+> **[☕ Support Development on Buy Me a Coffee](https://buymeacoffee.com/icpriceaction)**
+
+---
+
 ## ⚡ Key Features
 
 - **Range in two clicks:** Click the first corner, then the second, to draw a shaded band with resistance on top and support below. Prices snap to the instrument's tick size.
 - **Equilibrium and quarter levels:** A dashed 50% midline is shown by default, with optional dotted 25% / 75% lines. A badge reads the range size (e.g. `Range: 6.50 pts (26 ticks)`) and moves below the band when it would be cut off at the top of the panel.
 - **Edit without fighting it:** Eight handles (four corners, four edge midpoints) resize the band without jumping to the cursor. Drag a line, or anywhere inside a selected band, to move it, including into the right margin. Optional Extend Right projects the levels to the edge of the chart. Locked bands cannot be moved or edited.
-- **PATS & Context Aligned:** Designed for Price Action principles (Mack / Thomas Wade) and disciplined futures execution.
-- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency 2000-tick ES/MES charts.
+- **PATS & Context Aligned:** Designed for Price Action principles and disciplined futures execution.
+- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency tick charts.
 - **Clean Visuals:** Complementary default palette that preserves candlestick clarity without chart clutter.
 - **Fully Customizable:** Configure colors, line width, fill opacity, levels and the stats badge via the native NT8 settings panel.
 
@@ -43,7 +60,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 ## 📥 Installation Guide
 
 1. Head to the **[Releases](https://github.com/icPriceAction/range-band/releases)** tab of this repository.
-2. Download the latest release `.zip` file (`icPriceAction_RangeBand_v1.3.1.zip`).
+2. Download the latest release `.zip` file.
    - *Note: Do NOT extract or unzip the file.*
 3. Open **NinjaTrader 8**.
 4. In the Control Center, navigate to:
@@ -74,18 +91,9 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ## 📝 Changelog
 
-- **v1.3.1** (2026-11-03) - Initial public release. Cleaned and optimized by icPriceAction: cached Direct2D brushes and badge text layout (no per-frame allocations), lighter mouse handling, regrouped settings with descriptions.
-- **v1.3.0** (date unknown) - Grey default palette and line width 2, custom toolbar icon, locked bands can't be edited, minimum width only on creation, tick-snapped prices, auto-sized and flipping badge, delta-based handle resizing, Extend Right and 25% / 75% lines, autoscale support.
-- **v1.2.1** (date unknown) - Slot-based right-margin movement, minimum width protection.
-
----
-
-## ☕ Support the Project
-
-All tools provided by **icPriceAction** are 100% free and open-source for personal trading use. These tools, even though supported by AI have taken considerable time to design, build, test and package. If these tools bring you value, consider supporting continued development:
-
-- **Prop Firm Traders:** Use discount code **`ICPAT`** at checkout across top futures prop evaluation firms ([View Active Discounts](https://icpriceaction.com/prop-firms.html)).
-- **Profitable Traders:** Send a one-time tip to support my continued support and time, server hosting and open-source updates via [Buy Me a Coffee](https://buymeacoffee.com/icpriceaction).
+- **v1.3.1** - Initial public release. Cleaned and optimized by icPriceAction: cached Direct2D brushes and badge text layout (no per-frame allocations), lighter mouse handling, regrouped settings with descriptions.
+- **v1.3.0** - Grey default palette and line width 2, custom toolbar icon, locked bands can't be edited, minimum width only on creation, tick-snapped prices, auto-sized and flipping badge, delta-based handle resizing, Extend Right and 25% / 75% lines, autoscale support.
+- **v1.2.1** - Slot-based right-margin movement, minimum width protection.
 
 ---
 

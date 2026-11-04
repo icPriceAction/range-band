@@ -10,7 +10,6 @@
 // Repository:   https://github.com/icPriceAction/range-band
 // YouTube:      https://youtube.com/@icPriceAction
 // Support:      https://buymeacoffee.com/icpriceaction
-// Prop Code:    ICPAT (Discounts: https://icpriceaction.com/prop-firms.html)
 //
 // License:      Free for personal trading use. Commercial resale, redistribution,
 //               or repackaging is strictly prohibited. See LICENSE in official repository.
@@ -19,21 +18,21 @@
 //               line, optional 25% / 75% quarter lines and a range size badge in points and ticks.
 //
 // Changelog:
-//   v1.3.1 (2026-11-03) - Initial public release. Cleaned and optimized by icPriceAction.
-//                       - Direct2D brushes cached per render target (no per-frame brush allocations)
-//                       - Stats badge text and TextLayout cached; rebuilt only when the range or font changes
-//                       - Mouse-move work skipped while the band is not being edited or moved
-//                       - Settings regrouped into "1. General" / "2. Visuals" with descriptions on every parameter
-//                       - Icon WPF brushes frozen; full resource cleanup on termination
-//   v1.3.0 (date unknown) - New grey default colors (#8E8E8E lines, #C6C6C6 fill), default line width 2
-//   v1.3.0 (date unknown) - Custom menu/toolbar icon
-//   v1.3.0 (date unknown) - Locked bands can no longer be edited or moved by clicking them
-//   v1.3.0 (date unknown) - Minimum-width protection only on creation (zoomed-out bands no longer jump)
-//   v1.3.0 (date unknown) - Tick-snapped prices, instrument price formatting for the range readout
-//   v1.3.0 (date unknown) - Auto-sized badge that flips below the band when clipped at the panel top
-//   v1.3.0 (date unknown) - Delta-based handle resizing (no jump to cursor)
-//   v1.3.0 (date unknown) - New options: Extend Right, 25% / 75% quarter lines; band included in autoscale
-//   v1.2.1 (date unknown) - Slot-based right-margin movement, minimum width protection
+//   v1.3.1 - Initial public release. Cleaned and optimized by icPriceAction.
+//          - Direct2D brushes cached per render target (no per-frame brush allocations)
+//          - Stats badge text and TextLayout cached; rebuilt only when the range or font changes
+//          - Mouse-move work skipped while the band is not being edited or moved
+//          - Settings regrouped into "1. General" / "2. Visuals" with descriptions on every parameter
+//          - Icon WPF brushes frozen; full resource cleanup on termination
+//   v1.3.0 - New grey default colors (#8E8E8E lines, #C6C6C6 fill), default line width 2
+//   v1.2.0 - Custom menu/toolbar icon
+//          - Locked bands can no longer be edited or moved by clicking them
+//          - Minimum-width protection only on creation (zoomed-out bands no longer jump)
+//   v1.0.0 - Tick-snapped prices, instrument price formatting for the range readout
+//          - Auto-sized badge that flips below the band when clipped at the panel top
+//          - Delta-based handle resizing (no jump to cursor)
+//          - New options: Extend Right, 25% / 75% quarter lines; band included in autoscale
+//          - Slot-based right-margin movement, minimum width protection
 // =========================================================================================
 
 #region Using declarations
@@ -184,7 +183,7 @@ namespace NinjaTrader.NinjaScript.DrawingTools.icPA
 				Name = "Range Band";
 				Description = "Draws a trading range between resistance and support with a 50% equilibrium line, optional 25% / 75% quarter lines and a range size readout in points and ticks. Works on any chart and bar type; no Tick Replay required.\r\n"
 					+ "Developed by Istvan Cebrian | https://icpriceaction.com\r\n"
-					+ "Support this free tool: https://buymeacoffee.com/icpriceaction | Prop Firm Discount Code: ICPAT (https://icpriceaction.com/prop-firms.html)";
+					+ "Support this free tool: https://buymeacoffee.com/icpriceaction";
 
 				anchorTopLeft = new ChartAnchor { IsEditing = true, DrawingTool = this, DisplayName = "Top Left (Resistance)" };
 				anchorBottomRight = new ChartAnchor { IsEditing = false, DrawingTool = this, DisplayName = "Bottom Right (Support)" };
